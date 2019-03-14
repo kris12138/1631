@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.cllearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#play {
+    width: 3em; height: 3em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+ #hot {
+    width: 1.2em; height: 1.2em;
+    vertical-align: -0.1em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+.nav{
+    /* width: 750px; */
+    background-color: #DF0001;
+    position: relative;
+    
+}
+.nav>img{
+    height: 60px;;
+}
+.nav>span{
+    font-size: 20px;
+    font-weight: bold;
+    /* border: green 1px solid; */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #F6F6FB;
+    /* margin-top: 10px; */
+    
+}
+.nav>a{
+    font-size: 20px;
+    font-weight: bold;
+    border: #F6F6FB 2px solid;
+    border-radius: 20px;
+    /* padding: 10px; */
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    color: #F6F6FB;  
+}
+
+
+.page-1{
+    display: none;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-left-color: #999;
+    border-right-color: #999;
+    margin: 0 auto;
+}
+.page-1>.new-song-list>h2{
+    font-size: 20px;
+    margin-top: 30px;
+    color: black;
+    border-left: 3px solid #DF0001;
+    padding: 0px 10px;
+}
+/* .page-1>.new-song-list>ul{
+    margin-top: 10px;
+} */
+.page-1>.new-song-list>ul>li{
+    padding: 5px 10px;
+    margin: 10px 10px;
+    border-bottom: 1px solid #999;;
+    position: relative;
+    /* margin-bottom: 10px; */
+}
+.page-1>.new-song-list>ul>li>a>span{
+    color:#999;
+    font-size: 12px;
+}
+.page-1>.new-song-list>ul>li>a>#hot{
+    margin-top: 2px;
+
+}
+.page-1>.new-song-list>ul>li>a>#play{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+.page-1>.new-song-list>ul>li>a>h3{
+    font-size: 14px;
+    font-weight: 800;
+
+}
+.active{
+    display: block
+}
+
+
+
+
+.page-1>.hot-song-list{
+    margin-bottom: 20px;
+}
+.page-1>.hot-song-list>h2{
+    font-size: 20px;
+    margin: 30px 0px;
+    color: black;
+    border-left: 3px solid #DF0001;
+    padding: 0px 10px;
+}
+.page-1>.hot-song-list>ul{
+    overflow: hidden;
+    margin: 0 auto;
+    width:100%;
+    text-align: center;
+    /* padding: 0 15px; */
+ 
+
+}
+.page-1>.hot-song-list>ul>li{
+  
+    height: 130px;
+    width: 50%;
+    float: left;
+    position: relative;
+
+    text-align: center;
+    /* margin-right: 25px; */
+    /* overflow: hidden; */
+
+}
+.page-1>.hot-song-list>ul>li>a>img{
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 130px;
+    border: solid 2px #cccccc;
+    border-radius: 3px;
+    left: 50%; 
+    margin-left: -70px; 
+
+}
+.page-1>.hot-song-list>ul>li>a>span{
+    display: block;
+    position: absolute;
+    /* height: 100px; */
+    width: 140px;
+    bottom: 0%;
+    left: 50%;
+    margin-left: -70px;
+  
+
+}
